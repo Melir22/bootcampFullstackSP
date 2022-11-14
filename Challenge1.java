@@ -6,6 +6,9 @@ import java.util.Scanner;
 
 public class Challenge1 {
 
+	
+	//Metodo 1
+	
 	public static String generateString(String type) {
 
 		String stringStart = "";
@@ -30,6 +33,8 @@ public class Challenge1 {
 
 	}
 
+	//Metodo 2
+	
 	public static boolean checkListShort(String string, List<String> list) {
 		return !list.contains(string);
 	}
