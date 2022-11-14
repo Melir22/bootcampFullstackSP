@@ -9,7 +9,6 @@ public class Challenge1 {
 
 	
 	//Metodo 1
-	
 	public static String generateString(String type) {
 
 		String stringStart = "";
@@ -35,11 +34,6 @@ public class Challenge1 {
 	}
 
 	//Metodo 2
-	
-	public static boolean checkListShort(String string, List<String> list) {
-		return !list.contains(string);
-	}
-
 	public static boolean checkList(String string, List<String> list) {
 
 		for (int i = 0; i < list.size(); i++) {
@@ -57,19 +51,19 @@ public class Challenge1 {
 
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Ingresa el tipo: ");
+		System.out.println("Ingresa el tipo: ");
 		String tipo = scanner.nextLine();
-		String cadena = generarCadena(tipo);
-		System.out.print("La cadena es: ");
-		System.out.print(cadena);
+		String cadena = generateString(tipo);
+		System.out.println("La cadena es: ");
+		System.out.println(cadena);
 
 		String string = "1";
 		List<String> lista = Arrays.asList("1", "2", "3");
-		boolean resultadoCorto = chequearListaCorto(string, lista);
-		boolean resultadoLargo = checkList(string, lista);
-		System.out.print("Result : " + resultadoCorto);
-		System.out.println();
-		System.out.print("Result: " + resultadoLargo);
+		boolean resultado1 = checkList(string, lista);
+		string = "4";
+		boolean resultado2 = checkList(string, lista);
+		System.out.println("Result : " + resultado1);
+		System.out.println("Result: " + resultado2);
 
 	}
 }
