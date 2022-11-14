@@ -25,7 +25,7 @@ public class Challenge1 {
 		String string = "";
 		for (int i = 0; i < 8; i++) {
 
-			int numero = (int) (Math.random() * 9);
+			int numero = (int) (Math.random() * 10);
 			string = string + String.valueOf(numero);
 		}
 
